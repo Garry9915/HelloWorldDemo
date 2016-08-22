@@ -7,12 +7,16 @@
 //
 
 import UIKit
+import HelloWorldDemo
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        let printHelloWorld = PrintHelloWorld()
+        printHelloWorld.printConsoleLog("Hello World");
     }
 
     override func didReceiveMemoryWarning() {
